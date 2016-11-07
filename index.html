@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Long Scrolly Template</title>
+    <link rel="stylesheet" href="css/long-scrolly.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#first">Rise of the Tomb Raider</a></li>
+            <li><a href="#second">Tomb Raider</a></li>
+            <li><a href="#third">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Top Section -->
+    <section id="first">
+        <div class="container">
+
+            <header>
+
+              <h1 id="rotr">Rise of the Tomb Raider</h1>
+
+              <ul class="submenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gameplay</a></li>
+                <li><a href="#">Store</a></li>
+              </ul>
+
+            </header>
+
+            <div class="content">
+
+            <figure>
+              <img id="image1" src="images/rotr.jpg" alt="Rise of the Tomb Raider">
+            </figure>
+
+            <article>
+
+            <h2>Experience Lara Croft's Greatest Adventure Yet</h2>
+
+            <p id="intro">Rise of the Tomb Raider is an action-adventure video game developed by Crystal Dynamics and published by Square Enix. It is the sequel to the 2013 video game Tomb Raider, a reboot of the Tomb Raider franchise. <a href="http://www.xbox.com/en-US/games/rise-of-the-tomb-raider">Click here to learn more.</a></p>
+
+            </article>
+
+            <aside>
+
+            <h2><a href="Hello">Buy the Game Now!</a></h2>
+            
+            </aside>
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+    <!-- Second Section -->
+    <section id="second">
+        <div class="container">
+
+            <h1>Tomb Raider</h1>
+
+            <div class="content">
+
+            <h2>Setting</h2>
+
+            <img id="image2" src="images/tr.jpg" alt="Tomb Raider">
+
+            <p>The game is set on Yamatai, a fictional lost island in the Dragon's Triangle off the coast of Japan. The island—and the kingdom that once existed there—is shrouded in mystery, given its reputation for fearsome storms and shipwrecks that litter its coastline. Yamatai was once ruled by a queen named Himiko, known by her honorific title of "Sun Queen", who according to legend was blessed with shamanistic powers that enabled her to control the weather. Very little is known about Yamatai's history in the time since Himiko's death, other than that the island's infamy was established shortly thereafter. In exploring the island, the player may find evidence that—among others—Portuguese traders, United States Marines and a Japanese military project were all stranded on Yamatai at various points throughout history. At the start of the game, the island is populated exclusively by the Solarii Brotherhood, a violent cult of criminals, mercenaries and shipwreck survivors. The Solarii Brotherhood has established its own society based on the worship of Himiko, complete with a social structure and laws, with their exact purpose and intentions being explored over the course of the story.</p>
+            <p>The player takes on the role of Lara, who is a young and ambitious archaeology graduate whose theories on the location of the lost kingdom of Yamatai have convinced the Nishimura family—descendants from the people of Yamatai themselves—to fund an expedition in search of the kingdom. The expedition is led by Dr. James Whitman, a celebrity archaeologist who has fallen on hard times and is desperate to avoid bankruptcy, and is accompanied by Conrad Roth, a Royal Marine turned adventurer and close friend of the Croft family who serves as mentor to Lara; Samantha "Sam" Nishimura, Lara's friend and a representative of the Nishimura family who films the expedition for a documentary; Joslyn Reyes, a skeptical and temperamental mechanic and single mother; Jonah Maiava, an imposing and placid fisherman who is willing to believe in the existence of the paranormal and esoteric; Angus "Grim" Grimaldi, the gruff Glaswegian helmsman of the Endurance; and Alex Weiss, a goofy and bespectacled electronics specialist.</p>
+
+            <img id="image3" src="images/tr2.jpg" alt="Tomb Raider">
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+    <!-- Third Section -->
+    <section id="third">
+        <div class="container">
+
+            <h1>Third Section</h1>
+
+            <div class="content">
+
+            <h2>Sources</h2>
+
+            <a href="https://en.wikipedia.org/wiki/Tomb_Raider_(2013_video_game)">Tomb Raider Wikipedia Page</a>
+
+                
+
+            </div><!-- .content -->
+
+       </div><!-- .container -->
+
+    </section>
+
+<!-- Use the following JavaScript code to do the smooth-scroll thing on the internal links -->
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+// From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
+//          https://css-tricks.com/snippets/jquery/smooth-scrolling
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 250);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+
+</html>
